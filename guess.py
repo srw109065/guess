@@ -9,7 +9,7 @@ while True:
 	guess = int(guess)
 	if guess == ra:
 		print("猜對囉")
-		print("總共猜", times, "次")
+		print("你猜", times, "次")
 		break
 	else:
 		if ra > guess:
@@ -17,5 +17,6 @@ while True:
 			
 		elif ra < guess:
 			print("猜大了")
+	print("你猜", times, "次")
 			
 		
