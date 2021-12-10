@@ -1,9 +1,10 @@
 import random
 ra = random.randint(1,5)
-ra = int(ra)
+
 times = 0
 
 while True:
+	times += 1
 	guess = input("請你猜數字: ")
 	guess = int(guess)
 	if guess == ra:
@@ -13,8 +14,8 @@ while True:
 	else:
 		if ra > guess:
 			print("猜小了")
-			times += 1
+			
 		elif ra < guess:
 			print("猜大了")
-			times += 1
+			
 		
